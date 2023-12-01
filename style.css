@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap');
+
+@keyframes a_hov {
+  50% {
+    opacity:.3;
+    color:rgb(233,3,3);
+  }
+  100% {
+    opacity:1;
+    color:blue;
+  }
+}
+
+@keyframes body {
+  50% {
+    opacity:.1;
+    transform:rotate(180deg);
+  } 100% {
+    opacity:1;
+    transform:rotate(0deg);
+  }
+}
+
+
+body, html {
+  margin:0;
+  padding:0;
+  animation:body .4s forwards;
+}
+
+.nav {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:25px;
+  background-color:black;
+  margin-bottom:1%;
+}
+
+
+.nav ul {
+  margin:0;
+  padding:0;
+  
+}
+
+.nav li {
+  float:left;
+  list-style:none;
+}
+
+.nav a {
+  margin-left:15px;
+  text-decoration:none;
+  color:red;
+  font-family: 'Playpen Sans', cursive;
+  font-weight:bolder;
+  font-style:italic;
+}
+
+.nav a:hover {
+  animation:a_hov .5s forwards;
+}
+
+.wlc {
+  display:block;
+  width:100%;
+  position:relative;
+  background-color:red;
+  height:390px;
+  border-radius:5px;
+  border:.5px solid black;
+  font-family: 'Handjet', sans-serif;
+  
+}
+
+.wlc h1 , h2 , h3 , p {
+  text-align:center;
+  color:white;
+}
+
