@@ -4,7 +4,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      document.getElementById("time").innerHTML = moment().format("LTS")
+
+function time(){
+  
+document.getElementById("time").innerHTML = moment().format("LTS")
+}
+
+setInterval(time , 1000)
+    </script>
     <title>Computer Site</title>
   </head>
   <body>
